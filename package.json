@@ -2,7 +2,7 @@
   "name": "galactic-frequency-broadcaster",
   "version": "1.0.0",
   "description": "Real-time frequency generation and broadcasting for healing frequencies with VR/XR support",
-  "main": "src/index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
