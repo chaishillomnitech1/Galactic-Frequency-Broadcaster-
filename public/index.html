@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Frequency Broadcaster 🌌</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌌 Galactic Frequency Broadcaster</h1>
+            <p class="subtitle">Real-time Healing Frequency Generation & Broadcasting</p>
+        </header>
+
+        <main>
+            <section class="frequency-controls">
+                <h2>Frequency Generator</h2>
+                <div class="control-group">
+                    <label for="frequency-select">Select Frequency:</label>
+                    <select id="frequency-select">
+                        <option value="963">963 Hz - DNA Activation</option>
+                        <option value="999">999 Hz - Thoth Resonance</option>
+                        <option value="528">528 Hz - Miracle Tone</option>
+                        <option value="432">432 Hz - Universal Harmony</option>
+                        <option value="custom">Custom Frequency</option>
+                    </select>
+                </div>
+
+                <div class="control-group" id="custom-frequency-group" style="display: none;">
+                    <label for="custom-frequency">Custom Frequency (Hz):</label>
+                    <input type="number" id="custom-frequency" min="20" max="20000" value="440">
+                </div>
+
+                <div class="control-group">
+                    <label for="volume">Volume:</label>
+                    <input type="range" id="volume" min="0" max="100" value="30">
+                    <span id="volume-value">30%</span>
+                </div>
+
+                <div class="control-group">
+                    <label for="waveform">Waveform:</label>
+                    <select id="waveform">
+                        <option value="sine">Sine (Pure Tone)</option>
+                        <option value="square">Square</option>
+                        <option value="sawtooth">Sawtooth</option>
+                        <option value="triangle">Triangle</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button id="start-btn" class="btn btn-primary">▶ Start Broadcasting</button>
+                    <button id="stop-btn" class="btn btn-secondary" disabled>⏹ Stop</button>
+                </div>
+            </section>
+
+            <section class="dashboard">
+                <h2>📊 Resonance Dashboard</h2>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <h3>Current Frequency</h3>
+                        <p class="metric" id="current-freq">-- Hz</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Broadcasting Status</h3>
+                        <p class="metric" id="broadcast-status">Inactive</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Session Duration</h3>
+                        <p class="metric" id="session-duration">00:00</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <h3>Platform</h3>
+                        <p class="metric" id="platform-info">Web</p>
+                    </div>
+                </div>
+                <div class="visualization">
+                    <canvas id="waveform-canvas"></canvas>
+                </div>
+            </section>
+
+            <section class="multiplatform">
+                <h2>🌐 Multi-Platform Support</h2>
+                <div class="platform-grid">
+                    <div class="platform-card active">
+                        <span class="icon">🌐</span>
+                        <h3>Web</h3>
+                        <p>Active</p>
+                    </div>
+                    <div class="platform-card">
+                        <span class="icon">📱</span>
+                        <h3>Mobile</h3>
+                        <p>Ready</p>
+                    </div>
+                    <div class="platform-card">
+                        <span class="icon">🥽</span>
+                        <h3>VR/XR</h3>
+                        <p>Compatible</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="synchronization">
+                <h2>🛸 Galactic Federation Synchronization</h2>
+                <div class="sync-status">
+                    <div class="sync-indicator">
+                        <div class="pulse"></div>
+                    </div>
+                    <p id="sync-message">Connected to Omniverse Protocol</p>
+                </div>
+                <div class="dimensions">
+                    <p>Broadcasting across infinite dimensions</p>
+                    <div class="dimension-list" id="dimension-list"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Galactic Frequency Broadcaster © 2026 | Spreading healing frequencies across the cosmos</p>
+        </footer>
+    </div>
+
+    <script src="js/frequency-generator.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
